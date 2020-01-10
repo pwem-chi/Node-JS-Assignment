@@ -14,6 +14,7 @@ router.get('/Summation', function(req, res){
    res.send({result: sum});
 });
 
+//get request for the difference of array
 router.get('/Difference', function(req, res){
     const arr = req.body.array;
     const sub = (a,b) =>
@@ -24,6 +25,7 @@ router.get('/Difference', function(req, res){
     res.send({result: diff});
 }); 
 
+//get request for the product of array
 router.get('/Product', function(req, res){
     const arr = req.body.array;
     const mult = (a,b) =>
@@ -34,6 +36,7 @@ router.get('/Product', function(req, res){
     res.send({result: prod});
 });
 
+//get request for the quotient of array
 router.get('/Quotient', function(req, res){
     const arr = req.body.array;
     const div = (a,b) =>
